@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover02</title>
+    <style>
+         /*  
+         Seletores Personalizados
+            #   =   id
+            .   =   class
+            :   =   pseudo-class
+            ::  =   pseudo-element
+            >   =   children
+        */
+        
+         div{
+           background-color: lightgray;
+           text-align: center;
+           height: 200px;
+           width: 200px;
+           border: 1px solid black;
+           border-radius: 10px;
+           display: inline-block;
+       }
+        div > p{
+        display: none;
+       }
+
+       div:hover{
+        background-color: rgb(106, 255, 0);
+       }
+       div:hover > p{
+           display: block;
+       }
+
+       
+
+    </style>
+</head>
+<body>
+
+    <div id="d1">
+        01
+        <p>Esse texto é do quadrado 1</p>
+    </div>
+    <div id="d2">
+        02
+        <p>Esse texto é do quadrado 2</p>
+    </div>
+    <div id="d3">
+        03
+        <p>Esse texto é do quadrado 3</p>
+    </div>
+
+</body>
+</html>

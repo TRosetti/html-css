@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir site em vários dispositivos difernetes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio.</p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <!-- 
+            preload=""
+                Temos 3 opções:
+                auto       // vai baixar automaticamente o audio todo, se o audio for muito grande vai baixar msm assim, nao vale muito a pena
+                metadata   // vai baixar só se clicar, vale mais a pena
+                none       // vai fazer nada
+
+
+            autoplay       // vai tocar automaticamente
+
+            controls       // mostra os controles para iniciar e para o áudio
+
+            loop           // vai começar automaticamente quando acabar 
+            
+        -->
+        <source src="media/Training in the Fire - Twin Musicom.mp3" type="audio/mpeg">
+
+        <p> Infelizmente seu navegadir não consegue reproduzir áudio.
+            <a href="media/Training in the Fire - Twin Musicom.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+
+        <!-- 
+            Exemplos de outros tipos de media
+
+            O mais diferente para o type é o mp3 que vira mpeg
+
+            <source src="media/Training in the Fire - Twin Musicom.ogg" type="audio/ogg">
+
+            <source src="media/Training in the Fire - Twin Musicom.wav" type="audio/wav"> 
+        -->
+        
+
+    </audio>
+
+
+   <!-- 
+    
+       <audio src="media/Training in the Fire - Twin Musicom.mp3" controls autoplay></audio> 
+
+       Formatos que posso usar com esse modo , (mp3, wav, ogg) 
+    
+    --> 
+
+</body>
+    <!-- tag <picture> é uma boa tag para organizar as imagens do site, pois podemos usar a tag <source> -->
+            
+    <!-- A tag <source> ,source:media:type, é utilizada para mudar o tamanho das imagens automaticamente de acordo com o tamanho da tela.
+    
+    Normalmente, o source:media:type já aparece no media como min-width, porém é bom trocar para max-width. Ai no media é bom colocar o max-width mais o menos 50px a mais que a largura da imagem que está em baixo.
+
+    Lembrando, width = largura
+
+
+    E sim, para o source funcionar corretamente, precisamos colocar em cima da imagem, ou em cima de um outro source que tenha alguma imagem.
+
+    O srcset=" ", temos que colocar a imagem que queremos, no lugar que ela estiver.
+
+    O type=" ", geralmente ja vem com image/ , então só precisamos adicionar o tipo da imagem, (png, jpeg, jpg ...)
+    
+    -->
+
+
+
+    <!-- HandBreak -->
+</html>

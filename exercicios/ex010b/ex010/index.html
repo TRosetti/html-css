@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode entrar no video do Curso em Video do Youtube clicando <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27">aqui</a>, porém essa pagina vai fechar.</p> 
+    <p>Se você quiser abrir o mesmo vídeo e continuar com essa pagina aberta, clique <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_blank" rel="external">aqui.</a></p>
+
+    <h1>Usando Links Internos</h1>
+    <p>Esta é a primeira pagina do meu site. Se quiser acessar a segunda pagina click <a href="pag002.html" target="_self"rel="next">aqui.</a></p>
+    <p>Você tambem pode acessar a nossa pagina de <a href="noticias/pag003.html" target="_self" rel="next">notícias</a></p>
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a> </li>
+        <li><a href="livro/meulivro.pdf.zip" download="meulivro.pdf.zip" type="meulivro.pdf.zip">Baixar o livro compactado em ZIP</a></li>
+    </ul>
+</body>
+<!-- Usamos a tag <a> com parametro obrigatório, href=" ", para criar um link externo direto do nosso site. -->
+
+<!-- Atributos para a tag <a> -->
+<!-- target="_blank"        // usado para abrir o link em uma outra página -->
+<!-- rel="external"         //  -->
+<!-- hreflang="pt-br"       // usado para falar a lingua usada pela página que o link leva -->
+
+</html> 

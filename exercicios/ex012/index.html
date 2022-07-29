@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="560" controls autoplay loop>
+        <source src="media/meu-video-novo.mp4" type="video/mp4">
+        <source src="media/meu-video.mkv" type="video/mp4">
+        <source src="media/meu-video.webm " type="video/webm">
+        <p>Seu navegador não tem compatibilidade com r eprodução de vídeos.</p>
+    </video>
+
+    <h1>Incorporando vídeos direto do YouTube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6iw6GmoX3Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Incorporando vídeo do Vimeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/167429065?h=68c47bc8c7&color=ffffff&title=0&byline=0&portrait=0" width="560" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+   
+    <!-- Para incorporar videos direto do youtube, basta escolher o video, ir em compartilhar, clicar em incorporar, copiar e colar o codigo aqui.
+    Isso faz com que não pese muito o site e faz com que não gaste muito dinheiro com hospedagem  -->
+</body>
+ 
+<!-- 
+    videos.mp4        // funciona no Chrome e no safari.
+    videos.mkv        // funciona no Chrome, mas não no safari.
+    videos.webm       // funciona no Chrome e no safari.
+    videos.ogg        // Não testei, mas não funciona no safari.
+ -->    
+</html>
