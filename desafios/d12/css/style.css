@@ -67,6 +67,8 @@ section.imagem{
     background-color: rgb(102, 102, 102);
     color: white;
     box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.596);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.483);
@@ -76,14 +78,12 @@ section.imagem > p{
 }
 section#imagem1{
     background-image: url(../pacote-d012/imagens/background001.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-position: right center;
 }
 section#imagem2{
-    background: url(../pacote-d012/imagens/background002.jpg) center center no-repeat fixed;
-    background-size: cover;
+    background-image: url(../pacote-d012/imagens/background002.jpg);
+    background-position: right center;
+    
 }
 section > p{
     padding-bottom: 2em;
