@@ -76,7 +76,7 @@ section.imagem > p{
 }
 section#imagem1{
     background-image: url(../pacote-d012/imagens/background001.jpg);
-    background-position: right center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
