@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Avançadas</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: black;
+        }
+        header > h1{
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        main{
+            padding-top: 50px;
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th{
+            background-color: rgb(128, 127, 127);
+            color: white;
+        }
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        tbody > tr:nth-child(odd){ /* (2n -1) */
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){ /* (2n) */
+            background-color: rgba(211, 211, 211, 0.495);
+        }
+        tfoot{
+            background-color: rgb(128, 127, 127);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        Anatomia para Tabelas Grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+
+
+
+
+                tr -> linha
+                td -> dado
+                th -> titulo
+
+
+
+
+        ********     Sempre dentro de um (th) é bom usar um (scope="")     ********
+
+                         SCOPE sereve para "Apontar o caminho".
+
+            Se os DADOS (td) ficarem em baixo do TITULO (th), o SCOPE vai ser COL
+            Se os DADOS (td) ficarem ao lado do TITULO (th), o SCOPE vai ser ROW
+
+
+            Isso ajuda o google ler a tabela e assim melhorar as buscas
+     -->
+     <header>
+         <h1>Uso de Tabelas Grandes</h1>
+     </header>
+
+     <main>
+
+        <table>
+            <caption>Rank das 14 primeiras cidades com maior População</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 150px;">População</th>
+                    <th scope="col" style="width: 150px;">PIB R$</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>44 169 350</td>
+                    <td>1 939 890 000</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerai</td>
+                    <td>20 777 672</td>
+                    <td>519 326 000</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>16 497 395</td>
+                    <td>659 137 000</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>15 150 143</td>
+                    <td>245 025 000</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>11 228 091</td>
+                    <td>381 985 000</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>11 112 062</td>
+                    <td>376 960 000</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>9 297 861</td>
+                    <td>156 955 000</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>8 867 448</td>
+                    <td>130 621 000</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td>8 101 180</td>
+                    <td>130 883 000</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td>6 861 924</td>
+                    <td>78 475 000</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>6 734 568</td>
+                    <td>249 073 000</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td>6 551 322</td>
+                    <td>173 632 000</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td>3 950 359</td>
+                    <td>56 140 000</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td>3 894 899</td>
+                    <td>120 363 000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total Habitantes/PIB</th>
+                    <td>00000</td>
+                    <td>00000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+     </main>
+</body>
+</html>

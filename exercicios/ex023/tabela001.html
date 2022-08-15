@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabeala Simples</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            text-align: center;
+        }
+        header > h1{
+            color: white;
+            text-decoration: underline;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        main{
+            padding-top:50px ;
+        }
+        table{
+            width: 800px;
+            height: 400px;
+            margin: auto;
+            border-collapse: collapse;    /* 2 - Junta as bordas que criamos na tabela ( <td> )*/
+        }
+        td{
+            border: 1px solid black;    /* 1 - Cria a borda da tabela, porem ela fica toda separada */
+            text-align: center;           /* Alinhamento Horizontal*/
+            vertical-align: middle;          /* Alinhamento Vertical - top / bottom / middle - */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Priemira tabela em HTML5</h1>
+    </header>
+    <main>
+        <!--
+             Hierarquia de Tabela (simples) 
+            <table> = TABLE              == Tabela
+                <tr> = TABLE ROW         == Linha
+                    <th> = TABLE HEADER  == Cabeçalho da Tabela
+                    <td> = TABLE DATA    == Dado da Tabela / "Coluna"
+        -->
+        <table> <!-- Tabela-->
+            <tr> <!-- Primeira linha-->
+                <th>linha 1</th> <!-- Titulo 1-->
+                    <td>A1</td> <!-- Coluna 1 -->
+                    <td>B1</td> <!-- Coluna 2 -->
+                    <td>C1</td> <!-- Coluna 3 -->
+                    <td>D1</td> <!-- Coluna 4 -->
+                    <td>E2</td> <!-- Coluna 5 -->
+            </tr>
+            <tr> <!-- Segunda linha-->
+                <th>linha 2</th> <!-- Titulo 2-->
+                    <td>A2</td> <!-- Coluna 1 -->
+                    <td>B2</td> <!-- Coluna 2 -->
+                    <td>C2</td> <!-- Coluna 3 -->
+                    <td>D2</td> <!-- Coluna 4 -->
+                    <td>E2</td> <!-- Coluna 5 -->
+            </tr>
+            <tr> <!-- Terceira linha-->
+                <th>linha 3</th> <!-- Titulo 1-->
+                    <td>A3</td> <!-- Coluna 1 -->
+                    <td>B3</td> <!-- Coluna 2 -->
+                    <td>C3</td> <!-- Coluna 3 -->
+                    <td>D3</td> <!-- Coluna 4 -->
+                    <td>E3</td> <!-- Coluna 5 -->
+            </tr>
+            <tr> <!-- Quarta linha-->
+                <th>linha 4</th><!-- Titulo 1-->
+                    <td>A4</td> <!-- Coluna 1 -->
+                    <td>B4</td> <!-- Coluna 2 -->
+                    <td>C4</td> <!-- Coluna 3 -->
+                    <td>D4</td> <!-- Coluna 4 -->
+                    <td>E4</td> <!-- Coluna 5 -->
+            </tr>
+            <tr> <!-- Quinta linha-->
+                <th>linha 5</th> <!-- Titulo 1-->
+                    <td>A5</td> <!-- Coluna 1 -->
+                    <td>B5</td> <!-- Coluna 2 -->
+                    <td>C5</td> <!-- Coluna 3 -->
+                    <td>D5</td> <!-- Coluna 4 -->
+                    <td>E5</td> <!-- Coluna 5 -->
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
