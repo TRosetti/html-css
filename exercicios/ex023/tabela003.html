@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Tabela</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        header,footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        header > h1{
+            padding: 50px 0 50px 0;
+        }
+        main{
+            padding: 10px 0 10px 0;
+
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        footer > p{
+            padding: 10px 0 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mesclagem de Tabelas</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td rowspan="3">1</td> <!-- Esse rowspan serve para o td ocupar a quantidade de linhas que vc quiser, mas tem que estar disponivel-->
+                <td colspan="2">2</td> <!-- Esse colspan serve para o td ocupar a quantidade de colunas que vc quiser, mas tem que estar disponivel-->
+                <!-- <td>3</td> -->
+            </tr>
+            <tr>
+                <!-- <td>4</td> -->
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <!-- <td>7</td> -->
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </main>
+    <!-- <footer>
+        <p>Essa página foi desenvolvida por Thiago Rosetti Miranda, com base no Curso em Vídeo</p>
+    </footer> -->
+</body>
+</html>
