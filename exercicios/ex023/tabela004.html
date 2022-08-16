@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 50px 0;
+        }
+        main{
+            padding: 50px 0;
+            max-width: 1000px;
+            margin: auto;
+        }
+        table{
+            margin: auto;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th,td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th{
+            background-color: lightgray;
+        }
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+        }
+        section{
+            padding: 50px 0;
+        }
+        section > h1,h2,p{
+            padding-bottom: 1em;
+        }
+        ul{
+            list-style-position: inside;
+            padding-bottom: 1em;
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício04 de Tabela do Curso em Vídeo</h1>
+    </header>
+    <main>
+        <table>
+            <caption>Filmes Favoritos</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nome</th>
+                    <th scope="colgroup" colspan="3">Filmes</th>  <!-- Sempre que o TH for responsavel por mais de um grupo, precisamos utilizar o GROUP-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Mulher</th>  <!-- Sempre que o TH for responsavel por mais de um grupo, precisamos utilizar o GROUP-->
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Homem</th>  <!-- Sempre que o TH for responsavel por mais de um grupo, precisamos utilizar o GROUP-->
+                    <td>Bruno Mendonça</td>
+                    <td>Intocáveis</td>
+                    <td>Aménsia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dalga</td>
+                </tr>
+                <tr>
+                    <td>Thiago Rosetti Miranda</td>
+                    <td>Harry Potter</td>
+                    <td>Vingadores</td>
+                    <td>Top Gun</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="4">Total(exemplo)</th>
+                    <td>XXXXX</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <section>
+            <h1>Explicação de como usar o SCOPE e os COLSPAN/ROWSPAN</h1>
+            <p>Todos esses nomes (scope, colspan, rowspan) não alteram nada visualmente, mas são de extrema importancia da criação de tabela.</p>
+            <p>São utilizadas APENAS no TH</p>
+
+            <h2>SCOPE</h2>
+            <p>scope=""</p>
+            <P>O scope serve para apontarmos o que o th(título) abrange</P>
+            <ul>
+                <li>scope="col"             Ex.: Group / Nome</li>
+                <li>scope="colgroup"        Ex.: Filmes</li>
+                <li>scope="row"             Ex.: Total</li>
+                <li>scope="rowgroup"        Ex.: Mulher / Homem</li>
+            </ul>
+            <p>O group após o 'col'/ 'row' serve para mostrar que o th é responsavel por mais de uma linha(row) ou coluna(col)</p>
+
+            <h2>COLSPAN</h2>
+            <p>colspan="" serve para o th ou td utilize mais de um espaço na coluna</p>
+            <p>Ex.: Filmes / Total</p>
+
+            <h2>ROWSPAN</h2>
+            <p>rowspan="" serve para o th ou td utilize mais de um espaço na linha</p>
+            <p>Ex.: Mulher / Homem</p>
+        </section>
+    </main>
+</body>
+</html>
