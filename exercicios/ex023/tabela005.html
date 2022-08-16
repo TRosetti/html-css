@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>\
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 50px 0;
+        }
+        main{
+            padding: 50px 0;
+            margin: auto;
+        }
+        table{
+            margin: auto;
+            width: 700px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cNome{
+            background-color: crimson;
+        }
+        /* col.cSexo{
+            background-color: pink;
+        } */
+        col.cIdade{
+            background-color: aqua;
+        }
+        /* col.cProfissão{
+            background-color: blue;
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercicios de Tabelas</h1>
+    </header>
+    <main>
+        <table>
+
+            <!-- <colgroup>
+                <col class="cNome">
+                <col class="cSexo">
+                <col class="cIdade">
+                <col class="cProfissão">
+            </colgroup> -->
+            <colgroup>
+                <col class="cNome" span="2">
+                <col class="cIdade" span="2">
+            </colgroup>
+
+           <caption>Cadastro</caption>
+           <tr>
+               <th scope="col">Nome</th>
+               <th scope="col">Sexo</th>
+               <th scope="col">Idade</th>
+               <th scope="col">Profissão</th>
+           </tr>
+           <tr>
+               <td>Thiago Rosetti Miranda</td>
+               <td>M</td>
+               <td>20</td>
+               <td>Programador</td>
+           </tr>
+           <tr>
+            <td>Lucas Rosetti Miranda</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Engenheiro de Produção</td>
+        </tr>
+        <tr>
+            <td>Rosiani Rosetti</td>
+            <td>F</td>
+            <td>52</td>
+            <td>Professora</td>
+        </tr>
+
+        </table>
+    </main>
+</body>
+</html>
