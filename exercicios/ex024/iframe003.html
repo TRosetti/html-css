@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe003</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* font-family: Arial, Helvetica, sans-serif; */
+        }
+        h1, h2, p, a{
+            padding: 10px;
+        }
+        header{
+            background-color: rgba(0, 0, 0, 0.853);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-variant: small-caps;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0.853);
+            color: white;
+            padding: 30px 10px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.501);
+            border-radius: 5px;
+        }
+        nav > a:hover{
+            background-color: darkgray;
+        }
+        iframe#tela{
+            width: 97vw;
+            height: 500px;
+            margin: 20px;
+            border: 5px solid black;
+        }
+        footer{
+            color: white;
+            background-color: rgba(0, 0, 0, 0.853);
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer > p > a{
+            text-decoration: underline;
+            color: white;
+            font-weight: bolder;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício de Iframe</h1>
+    </header>
+    <nav> 
+        <a href="iframes/pagina001.html" target="frame">Página001</a>
+        <a href="../../desafios/d12/html/index.html" target="frame">Página002</a>
+        <a href="../../desafios/d10/android.html" target="frame">Página003</a>
+    </nav>
+    <main>
+        <h1>Escolha um link acima</h1>
+        <p>Nesse exercício iremos fazer com que você abra o link que quiser na tela abaixo</p>
+        <iframe id="tela" name="frame" src="" srcdoc="<h1>Escolha uma página acima clicando em um dos links</h1><p>Esses textos estao sendo escrito dentro do 'srcdoc' para não deixar o iframe inicial em branco.</p><p>O 'srcdoc' no iframe serve para colocar um html dentro do iframe, porém da pra simplesmente colocar outro um link dentro do src que fica mais facil.</p> " frameborder="1"></iframe>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi ducimus eum quo incidunt. Ad numquam eius, ducimus provident aperiam aliquid commodi assumenda hic tempora soluta sapiente, maxime iste, quae maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium unde provident officiis distinctio aliquam blanditiis dignissimos? Blanditiis officiis enim, repellat consectetur veniam soluta temporibus cumque fugiat quo perferendis fuga! Aut!</p>
+    </main>
+    <footer>
+        <p>Criado por <a href="https://github.com/TRosetti" target="_blank">Thiago Rosetti Miranda</a>
+        Infelizmente seu navegador não suporta isso.</p>
+    </footer>
+</body>
+</html>
