@@ -1,0 +1,75 @@
+[
+    {
+        "title": "Card 1 - E",
+        "content": "Conteúdo do card 1. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "entradas"
+    },
+    {
+        "title": "Card 2 - B",
+        "content": "Conteúdo do card 2. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "bebidas"
+    },
+    {
+        "title": "Card 3 - B",
+        "content": "Conteúdo do card 2. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "bebidas"
+    },
+    {
+        "title": "Card 4 - E",
+        "content": "Conteúdo do card 2. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "entradas"
+    },
+    {
+        "title": "Card 5 - C",
+        "content": "Conteúdo do card 2. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "carnes"
+    },
+    {
+        "title": "Card 6 - E",
+        "content": "Conteúdo do card 2. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "entradas"
+    },
+    {
+        "title": "Card 7 - C",
+        "content": "Conteúdo do card 2. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "carnes"
+    },
+    {
+        "title": "Card 8 - B",
+        "content": "Conteúdo do card 2. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "bebidas"
+    }
+    ,
+    {
+        "title": "Card 9 - E",
+        "content": "Conteúdo do card 2. Pode ser dinâmico.",
+        "price1": "R$10,00",
+        "price2": "R$4,00",
+        "img": "../desafios/login/imagens/pexels-igor-starkov-1117452.jpg",
+        "class1": "entradas"
+    }
+]

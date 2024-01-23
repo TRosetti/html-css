@@ -1,0 +1,40 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.card_{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.card_title{
+    margin: 0px;
+    font-size: 1.3em;
+}
+.card_text{
+    margin: 10px 0;
+}
+.price p{
+    display: inline;
+    text-decoration: line-through;
+    padding-right: 10px;
+    font-size: 1.2em;
+    margin: 0px;
+}
+.price_discount{
+    text-decoration: none !important;
+    color: green;
+
+}
+
+img{
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
